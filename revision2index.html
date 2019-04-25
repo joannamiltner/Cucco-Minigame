@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+<!-- /* CSS-------------------------------------------------------------------------------------------------------------------------- */ -->
+
+   <style type="text/css">
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+  
+    body{
+        background: #999966;
+        width: 1000px;
+        overflow: hidden; */
+    }
+    /* div.container{
+        background: #999966;
+        position: absolute;
+        width: 1000px;
+        min-height: 500px;
+    } */
+
+    div.row div{
+        width:20px;
+        height: 20px;
+        display: inline-block;
+    }
+
+    div.row{
+        width:1000px;
+    }
+
+    /* div.water{
+        background:url(images/water.gif);
+    } */
+
+    div.brick{
+        background: url('images/items-objects-3.gif');
+        background-position: -227px 220px;
+        background-size: 2100%;
+        width: 20px;
+        height: 20px;
+ 
+    }
+
+    div.coin{
+        background: url('images/cherry.gif');
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: 120%;
+    }
+
+    div#house{
+        background: url('images/items-objects-3.gif');
+        background-position: -210px 195px;
+        background-size: 750%;
+        width: 80px;
+        height: 80px;
+        position: relative;
+        top: -560px;
+        left: 420px;
+    }
+
+    div#house2{
+        background: url('images/items-objects-3.gif');
+        background-position: -210px 195px;
+        background-size: 750%;
+        width: 80px;
+        height: 80px;
+        position: relative;
+        top: -360px;
+        left: 610px;
+    }
+
+    div#tavern{
+        background: url('images/items-objects-3.gif');        
+        background-position: -373px 240px;
+        background-size: 750%;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: -380px;
+        left: 140px;
+    }
+
+    div#bridge{
+        background: url('images/7651.png');
+        background-position: -248px 188px;
+        background-size: 570%;
+        width: 140px;
+        height: 80px;
+        position: relative;
+        bottom: 580px;
+        left: 820px;
+    }
+
+    div#tree{
+        background: url('images/items-objects-3.gif');
+        background-position: -59px 150px;
+        background-size: 900%;
+        width: 60px;
+        height: 60px;
+        position: relative;
+        top: -620px;
+        left: 400px;
+    }
+
+    div#tree2{
+        background: url('images/items-objects-3.gif');
+        background-position: -59px 150px;
+        background-size: 900%;
+        width: 60px;
+        height: 60px;
+        position: relative;
+        top: -640px;
+        left: 740px;
+    }
+
+    div#treep{
+        background: url('images/items-objects-3.gif');
+        background-position: -5px 150px;
+        background-size: 900%;
+        width: 60px;
+        height: 60px;
+        position: relative;
+        top: -940px;
+        left: 160px;
+    }
+
+    div#gate{
+        background: url('images/items-objects-3.gif');
+        background-position: 535px -87px;
+        background-size: 900%;
+        width: 120px;
+        height: 60px;
+        position: relative;
+        top: -580px;
+        left: 400px;
+    }
+
+    div.stump{
+        background: url('images/items-objects-3.gif');
+        background-position: -73px 208px;
+        background-size: 2000%;
+        width: 20px;
+        height: 20px;
+    }
+
+    div.fence{
+        background: url('images/items-objects-3.gif');
+        background-position: 186px 2492px;
+        background-size: 2200%;
+        width: 20px;
+        height: 20px;
+    }
+
+    div.pot{
+        background: url('images/items-objects-3.gif');
+        background-position: -49px 2170px;
+        background-size: 3200%;
+        width: 20px;
+        height: 20px;
+    }
+
+    div.bush{
+        background: url('images/items-objects-3.gif');
+        background-position: -12px 330px;
+        background-size: 3000%;
+        width: 20px;
+        height: 20px;
+    }
+
+    div.path{
+        background: url('images/items-objects-2.png');
+        background-position: -89px 423px;
+        background-size: 4850%;
+        width: 20px;
+        height: 20px;
+        border-radius: 6px;
+    }
+
+    div.water{
+        background: url('images/uRbmAOV.gif');
+        background-position: -89px 423px;
+        background-size: 300%;
+        width: 20px;
+        height: 20px;
+    }
+
+
+    div#kirby{
+        background: url('images/29f7d8f96f960bc1064306b20a8a195724d860ca_00.gif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 200%;
+        width: 20px;
+        height: 20px;
+        position:absolute;
+    }
+
+    div#bowWow{
+        background: url('images/bowwow.gif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+    } 
+
+    div.potion{
+        background: url('images/navi.gif');
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: 100%;
+        width: 20px;
+        height: 20px;
+    }
+
+    div {
+        line-height: 0;
+    }
+
+    div#score{
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        color:rgb(54, 54, 54);
+        font-family: 'Press Start 2P', cursive;
+        font-size: 40px;
+        display: inline-block;
+        position: relative;
+        top: -800px;
+        left: 1160px;
+    }
+
+    div#title{
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        color:rgb(54, 54, 54);
+        font-family: 'Press Start 2P', cursive;
+        font-size: 10px;
+        display: inline-block;
+        position: relative;
+        top: -870px;
+        left: 1100px;
+    }
+
+    div#bubble{
+        background: url('images/5d71bd8cd533889.png');
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: 100%;
+        width: 280px;
+        height: 180px;
+        position: relative;   
+        top: -1150px;
+        left: 1100px;
+    }
+    </style>
+</head>
+
+<!-- /* HTML------------------------------------------------------------------------------------------------------------------------ */ -->
+
+<body>
+    <div id='container'></div>
+        <div id='world'></div>
+        <div id='house'></div>
+        <div id='tavern'></div>
+        <div id='house2'></div>
+        <div id='bridge'></div>
+        <div id='tree'></div>
+        <div id='treep'></div>
+        <div id='tree2'></div>
+        <div id='gate'></div>
+        <div id='bush'></div>
+        <div id='stump'></div>
+        <div id='fence'></div>
+        <div id='pot'></div>
+        <div id='path'></div>
+        <div id='water'></div>
+        <div id='kirby'></div>
+        <div id='bowWow'></div>
+        <div id='potion'></div>
+        <div id='score'>0</div>
+        <div id='title'>Press SPACE to Start</div>
+        <div id='bubble'></div>
+        
+    </div>
+
+<!-- /* JS-------------------------------------------------------------------------------------------------------------------------- */ -->
+
+
+    <script>
+        var world= [
+            [7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,7,7,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,7,7,2,0,0,0,0,0,0,1,1,1,0,4,4,0,0,0,0,0,0,4,4,0,0,0,2,3,1,1,1,0,0,2,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,2,2,2,0,0,0,0,0,0,1,1,1,0,0,0,9,0,0,1,0,9,0,0,0,0,0,2,2,2,1,0,0,0,2,2,2,7,7,7,7,7,7,7],
+            [7,7,7,7,7,2,1,0,0,0,0,0,0,0,1,1,0,0,0,0,9,0,0,1,0,9,0,0,0,0,0,0,0,0,2,0,0,0,0,0,2,7,7,7,7,7,7,7],
+            [7,7,7,7,7,2,1,0,0,0,0,0,0,0,1,1,0,0,0,0,9,0,0,1,0,9,0,0,0,0,0,0,0,0,2,1,2,2,2,1,2,7,7,7,7,7,7,7],
+            [7,7,7,7,7,2,1,0,0,0,0,0,0,0,0,1,1,0,0,0,8,8,1,1,8,8,0,0,0,0,0,0,0,0,8,8,0,0,2,2,2,7,7,7,7,7,7,7],
+            [7,7,7,7,7,2,1,0,0,0,0,3,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,2,7,7,7,7,7,7,7],
+            [7,7,7,7,7,2,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,2,7,7,7,7,7,7,7],
+            [7,7,7,7,7,2,1,0,0,4,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,2,7,7,7,7,7,7,7],
+            [7,7,7,7,7,2,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,2,7,7,7,7,7,7,7],
+            [7,7,7,7,7,2,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,7,7,7,7,7,7,7],
+            [7,7,7,7,7,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,7,7,7,7,7,7,7],
+            [7,7,7,7,7,2,1,0,0,0,0,0,0,0,1,1,1,0,0,6,0,0,0,5,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,2,7,7,7,7,7,7,7],
+            [7,7,7,7,7,2,2,2,2,2,2,2,2,0,1,1,1,0,0,0,0,0,0,5,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2],
+            [7,7,7,7,7,2,4,2,0,0,0,0,2,0,1,1,1,0,0,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+            [7,7,7,7,7,2,4,2,0,0,0,0,2,0,1,1,1,0,0,5,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+            [7,7,7,7,7,2,4,2,0,0,0,0,2,0,1,1,1,0,0,5,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2],
+            [7,7,7,7,7,2,4,2,0,0,0,0,2,0,1,1,1,0,0,5,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,7,7,7,7,7,7,7],
+            [7,7,7,7,7,2,4,2,2,2,2,2,2,9,1,1,1,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,7,7,7,7,7,7,7],
+            [7,7,7,7,7,2,0,0,0,0,1,1,1,1,1,1,0,0,0,5,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,2,7,7,7,7,7,7,7],
+            [7,7,7,7,7,2,0,0,0,5,1,1,0,0,1,1,0,0,0,5,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,2,7,7,7,7,7,7,7],
+            [7,7,7,7,7,2,0,0,0,5,1,1,0,0,1,1,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,3,1,0,0,0,0,0,2,7,7,7,7,7,7,7],
+            [7,7,7,7,7,2,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,2,7,7,7,7,7,7,7],
+            [7,7,7,7,7,2,0,0,0,1,1,1,0,0,1,1,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,7,7,7,7,7,7,7],
+            [7,7,7,7,7,2,0,0,0,1,1,1,0,0,1,1,0,0,0,0,0,0,5,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,7,7,7,7,7,7,7],
+            [7,7,7,7,7,2,2,2,0,1,1,1,0,0,1,1,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,7,7,7,7,7,7,7],
+            [7,7,7,7,7,7,7,2,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,7,7,7,7,7,7,7],
+            [7,7,7,7,7,7,7,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,7,7,7,7,7,7,7],
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        ];
+        var score=0;
+
+        var kirby={
+            x: 29,
+            y: 6
+        };
+
+        var bowWow={
+            x:29,
+            y:22
+        };
+
+
+//         var i =0
+//         var title = "Press SPACE to Start";
+//         var speed = 50;
+
+//         function typeWriter() {
+//              if (i < txt.length) {
+//              document.getElementById("title").innerHTML += txt.charAt(i);
+//     i++;
+//     setTimeout(typeWriter, speed);
+//     displaytitle();
+//   }
+// }
+        
+        function displayWorld(){
+            var output= '';
+            for(var i=0; i<world.length; i++){
+                output += "\n<div class='row'>\n";
+                for(var j=0; j<world[i].length; j++){
+                    if(world[i][j] == 2)
+                    output +="<div class='brick'></div>";
+                    else if(world[i][j] == 1)
+                    output +="<div class='coin'></div>";
+                    if(world[i][j] == 0)
+                    output +="<div class='empty'></div>";
+                    else if(world[i][j] == 3)
+                    output +="<div class='stump'></div>";
+                    else if(world[i][j] == 4)
+                    output +="<div class='bush'></div>";
+                    else if(world[i][j] == 5)
+                    output +="<div class='path'></div>";
+                    else if(world[i][j] == 6)
+                    output +="<div class='potion'></div>";
+                    else if(world[i][j] == 7)
+                    output +="<div class='water'></div>";
+                    else if(world[i][j] == 8)
+                    output +="<div class='fence'></div>";
+                    else if(world[i][j] == 9)
+                    output +="<div class='pot'></div>";
+                    
+                }
+                output += "\n</div>";
+            }
+            document.getElementById('world').innerHTML=output;
+        }
+
+        function displayKirby(){
+            document.getElementById('kirby').style.top = kirby.y*20+"px";
+            document.getElementById('kirby').style.left = kirby.x*20+"px";
+        }
+
+        function displaybowWow(){
+            document.getElementById('bowWow').style.top = bowWow.y*20+"px";
+            document.getElementById('bowWow').style.left = bowWow.x*20+"px";
+        }
+
+        function displaypotion(){
+            document.getElementById('potion').style.top = potion.y*20+"px";
+            document.getElementById('potion').style.left = potion.x*20+"px";
+        }
+        function displayScore(){
+            document.getElementById('score').innerHTML =score;
+        }
+        function displaystump(){
+            document.getElementById('stump').style.top = stump.y*20+"px";
+            document.getElementById('stump').style.left = stump.x*20+"px";
+        }
+
+
+        function displayfence(){
+            document.getElementById('fence').style.top = fence.y*20+"px";
+            document.getElementById('fence').style.left = fence.x*20+"px";
+        }
+
+        function displaypot(){
+            document.getElementById('pot').style.top = pot.y*20+"px";
+            document.getElementById('pot').style.left = pot.x*20+"px";
+        }
+
+
+        function displaybush(){
+            document.getElementById('bush').style.top = bush.y*20+"px";
+            document.getElementById('bush').style.left = bush.x*20+"px";
+        }
+        function displaypath(){
+            document.getElementById('path').style.top = path.y*20+"px";
+            document.getElementById('path').style.left = path.x*20+"px";
+        }
+
+        function displaybubble(){
+            document.getElementById('bubble').style.top = bubble.y*20+"px";
+            document.getElementById('bubble').style.left = bubble.x*20+"px";
+        }
+
+        function displaypotion(){
+            document.getElementById('potion').style.top = potion.y*20+"px";
+            document.getElementById('potion').style.left = potion.x*20+"px";
+        }
+
+        function displaywater(){
+            document.getElementById('water').style.top = water.y*20+"px";
+            document.getElementById('water').style.left = water.x*20+"px";
+        }
+
+        displayWorld();
+        displayKirby();
+        displayScore();
+        displaybowWow();
+        displaypotion();
+        displaystump();
+        displaybush();
+        displaypath();
+        displaybubble();
+        displaywater();
+        displayfence();
+        displaypot();
+
+        document.onkeydown = function(e){
+            if(e.keyCode == 37 && world[kirby.y][kirby.x-1] !=2){
+                kirby.x--;
+                // new audio("sounds/OOT_Cucco1.wav").play(); HOWCOME when added here will not play?
+            }
+            else if(e.keyCode == 39 && world[kirby.y][kirby.x+1] !=2){
+                kirby.x++;
+            }
+            else if(e.keyCode ==38 && world[kirby.y-1][kirby.x] !=2){
+                kirby.y--;
+            }
+            else if(e.keyCode == 40 && world[kirby.y+1][kirby.x] !=2){
+                kirby.y++;
+            }
+            //cannot figure out how to do avoidance 3 and 4. tried adding to braccet and adding new lines
+
+            if(e.keyCode==32){
+                new Audio("sounds/Link.mp3").play();
+                new audio("sounds/OOT_Cucco1.wav").play();
+            }
+
+            if(world[kirby.y][kirby.x]==1){
+                world[kirby.y][kirby.x]=0;
+                score+=10;
+                displayWorld();
+                displayScore();
+            }
+            if(world[kirby.y][kirby.x]==6){
+                world[kirby.y][kirby.x]=0;
+                // lives+=1
+                // new audio("sounds/TP_Heart.wav").play();
+                displayWorld();
+            }
+            console.log(e.keyCode);
+            displayKirby();
+        }
+
+        </script>
+
+</body>
+</html>
