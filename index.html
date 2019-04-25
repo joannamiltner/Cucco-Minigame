@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+
+<!-- /* CSS-------------------------------------------------------------------------------------------------------------------------- */ -->
+
+   <style type="text/css">
+    body{
+        background:url(images/gg.png);
+        background-repeat: repeat;
+        background-position: 0px, 0px;
+        background-size: 30%;
+        margin:0px;
+    }
+
+    div.row div{
+        width:20px;
+        height: 20px;
+        display: inline-block;
+    }
+
+    div.row{
+        width:500px;
+    }
+
+    /* div.water{
+        background:url(images/water.gif);
+    } */
+
+    div.brick{
+        background: url(images/brick.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 140%;
+    }
+
+    div.coin{
+        background: url('images/yru.gif');
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: 40%;
+    }
+
+    div.empty{
+    }
+
+    div#kirby{
+        background: url('images/29f7d8f96f960bc1064306b20a8a195724d860ca_00.gif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 210%;
+        width: 20px;
+        height: 20px;
+        position:absolute;
+    }
+
+    div#bowWow{
+        background: url('images/bowwow.gif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+    } 
+
+    div#potion{
+        background: url('images/potion.gif');
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: 165%;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+    }
+
+    div {
+        line-height: 0;
+    }
+
+    div#score{
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        color:rgb(255, 255, 255);
+        font-family:'Dokdo', cursive;
+        display: inline-block;
+        margin-top: 15px;
+        margin-left: 230px;
+    }
+
+    </style>
+</head>
+
+<!-- /* HTML------------------------------------------------------------------------------------------------------------------------ */ -->
+
+<body>
+    <div id='container'>
+        <div id='world'></div>
+        <div id='kirby'></div>
+        <div id='bowWow'></div>
+        <div id='potion'></div>
+        <div id='score'>0</div>
+    </div>
+
+<!-- /* JS-------------------------------------------------------------------------------------------------------------------------- */ -->
+
+
+    <script>
+        var world= [
+            [2,2,2,2,2,2,2,2,2,2,2,2,2],
+            [2,0,0,2,1,1,0,0,1,1,1,1,2],
+            [2,0,0,2,2,2,2,2,2,1,1,1,2],
+            [2,0,0,0,1,1,1,1,1,1,1,0,0],
+            [2,0,0,0,1,1,1,0,1,1,1,0,2],
+            [2,1,1,1,1,1,2,0,2,2,1,1,2],
+            [2,1,1,1,1,1,2,0,0,2,1,1,2],
+            [2,1,1,0,1,1,2,0,0,2,1,1,2],
+            [2,2,2,2,1,1,2,0,2,2,1,1,2],
+            [2,1,1,2,2,1,2,0,1,1,1,1,2],
+            [2,1,1,1,1,1,2,1,1,1,1,1,2],
+            [2,2,2,2,2,2,2,2,2,2,2,2,2]
+        ];
+        var score=0;
+
+        var kirby={
+            x: 1,
+            y: 1
+        };
+
+        var bowWow={
+            x:7,
+            y:8
+        };
+
+        var potion={
+            x:8,
+            y:6
+        };
+        
+        function playmusic(){
+            if(e.keyCode==32){
+                audio.playmusic("sounds/Link.mp3");
+                audio.playmusic("sounds/OOT-Cucco1.wav");
+            }
+        }
+
+        function displayWorld(){
+            var output= '';
+            for(var i=0; i<world.length; i++){
+                output += "\n<div class='row'>\n";
+                for(var j=0; j<world[i].length; j++){
+                    if(world[i][j] == 2)
+                    output +="<div class='brick'></div>";
+                    else if(world[i][j] == 1)
+                    output +="<div class='coin'></div>";
+                    if(world[i][j] == 0)
+                    output +="<div class='empty'></div>";
+                }
+                output += "\n</div>";
+            }
+            document.getElementById('world').innerHTML=output;
+        }
+
+        function displayKirby(){
+            document.getElementById('kirby').style.top = kirby.y*20+"px";
+            document.getElementById('kirby').style.left = kirby.x*20+"px";
+        }
+
+        function displaybowWow(){
+            document.getElementById('bowWow').style.top = bowWow.y*20+"px";
+            document.getElementById('bowWow').style.left = bowWow.x*20+"px";
+        }
+
+        function displaypotion(){
+            document.getElementById('potion').style.top = potion.y*20+"px";
+            document.getElementById('potion').style.left = potion.x*20+"px";
+        }
+        function displayScore(){
+            document.getElementById('score').innerHTML =score;
+        }
+
+        displayWorld();
+        displayKirby();
+        displayScore();
+        displaybowWow();
+        displaypotion();
+
+        document.onkeydown = function(e){
+            if(e.keyCode == 37 && world[kirby.y][kirby.x-1] !=2){
+                kirby.x--;
+            }
+            else if(e.keyCode == 39 && world[kirby.y][kirby.x+1] !=2){
+                kirby.x++;
+            }
+            else if(e.keyCode ==38 && world[kirby.y-1][kirby.x] !=2){
+                kirby.y--;
+            }
+            else if(e.keyCode == 40 && world[kirby.y+1][kirby.x] !=2){
+                kirby.y++;
+            }
+            if(e.keyCode==32){
+                new Audio("sounds/Link.mp3").play();
+                new audio("sounds/OOT_Cucco1.wav").play();
+            }
+
+            if(world[kirby.y][kirby.x]==1){
+                world[kirby.y][kirby.x]=0;
+                score+=10;
+                displayWorld();
+                displayScore();
+            }
+
+            console.log(e.keyCode);
+            displayKirby();
+        }
+
+        </script>
+
+</body>
+</html>
