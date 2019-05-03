@@ -11,14 +11,14 @@
 
    <style type="text/css">
 
-*{
+    *{
     padding: 0px;
     margin: 0px;
-}
+    }
   
     body{
         background: #999966;
-        width: 1000px;
+        width: 2800px;
         overflow: hidden;
     }
 
@@ -29,12 +29,8 @@
     }
 
     div.row{
-        width:1000px;
+        width:2800px;
     }
-
-    /* div.water{
-        background:url(images/water.gif);
-    } */
 
     div.brick{
         background: url('images/items-objects-3.gif');
@@ -42,7 +38,6 @@
         background-size: 2100%;
         width: 20px;
         height: 20px;
- 
     }
 
     div.coin{
@@ -59,7 +54,7 @@
         width: 80px;
         height: 80px;
         position: relative;
-        top: -560px;
+        top: -580px;
         left: 420px;
     }
 
@@ -70,7 +65,7 @@
         width: 80px;
         height: 80px;
         position: relative;
-        top: -360px;
+        top: -380px;
         left: 600px;
     }
 
@@ -81,7 +76,7 @@
         width: 100px;
         height: 100px;
         position: relative;
-        top: -380px;
+        top: -400px;
         left: 140px;
     }
 
@@ -92,7 +87,7 @@
         width: 140px;
         height: 80px;
         position: relative;
-        bottom: 580px;
+        bottom: 600px;
         left: 820px;
     }
 
@@ -103,7 +98,7 @@
         width: 60px;
         height: 60px;
         position: relative;
-        top: -620px;
+        top: -640px;
         left: 400px;
     }
 
@@ -114,7 +109,7 @@
         width: 60px;
         height: 60px;
         position: relative;
-        top: -640px;
+        top: -660px;
         left: 740px;
     }
 
@@ -125,7 +120,7 @@
         width: 60px;
         height: 60px;
         position: relative;
-        top: -940px;
+        top: -960px;
         left: 160px;
     }
 
@@ -136,8 +131,19 @@
         width: 40px;
         height: 60px;
         position: relative;
-        top: -1000px;
+        top: -1020px;
         left: 680px;
+    }
+
+    div#chest{
+        background: url('images/items-objects-3.gif');
+        background-position: -32px -280px;
+        background-size: 2000%;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        top: -1360px;
+        left: 1160px;
     }
 
     div#gate{
@@ -147,7 +153,7 @@
         width: 120px;
         height: 60px;
         position: relative;
-        top: -640px;
+        top: -660px;
         left: 400px;
     }
 
@@ -175,7 +181,6 @@
         height: 20px;
     }
 
-
     div#sign{
         background: url('images/items-objects-3.gif');
         background-position: -103px 2126px;
@@ -183,9 +188,10 @@
         width: 20px;
         height: 20px;
         position: relative;
-        top: -860px;
+        top: -880px;
         left: 400px;
     }
+
     div#signy{
         background: url('images/items-objects-3.gif');
         background-position: -103px 2126px;
@@ -193,7 +199,7 @@
         width: 20px;
         height: 20px;
         position: relative;
-        top: -1080px;
+        top: -1100px;
         left: 720px;
     }
 
@@ -221,7 +227,6 @@
         width: 20px;
         height: 20px;
     }
-
 
     div#kirby{
         background: url('images/29f7d8f96f960bc1064306b20a8a195724d860ca_00.gif');
@@ -262,27 +267,53 @@
         text-align: center;
         color:rgb(54, 54, 54);
         font-family: 'Press Start 2P', cursive;
-        font-size: 40px;
+        font-size: 15px;
         display: inline-block;
         position: relative;
-        top: -800px;
-        left: 1160px;
+        top: -1250px;
+        left: 875px;
     }
+
     div#lives{
         width: 30px;
         height: 30px;
         text-align: center;
         color:rgb(54, 54, 54);
         font-family: 'Press Start 2P', cursive;
-        font-size: 40px;
+        font-size: 30px;
         display: inline-block;
         position: relative;
-        top: -650px;
-        left: 1260px;
+        top: -1290px;
+        left: 840px;
+    }
+
+    div#x{
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        color:rgb(54, 54, 54);
+        font-family: 'Press Start 2P', cursive;
+        font-size: 15px;
+        display: inline-block;
+        position: relative;
+        top: -1300px;
+        left: 840px;
+    }
+
+    div#heart{
+        background: url('images/heart.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 300%;
+        width: 60px;
+        height: 60px;
+        position: relative;
+        top: -1612px;
+        left: 830px;
     }
 
     div#gameover{
-        width: 30px;
+        width: 400px;
         height: 30px;
         text-align: center;
         color:rgb(54, 54, 54);
@@ -290,21 +321,23 @@
         font-size: 40px;
         display: inline-block;
         position: relative;
-        top: -800px;
-        left: 1260px;
+        top: -1276px;
+        left: 272px;
     }
 
     div#title{
-        width: 200px;
-        height: 200px;
+        width: 230px;
+        height: 15px;
         text-align: center;
-        color:rgb(54, 54, 54);
+        padding-top: 20px;;
+        color:rgb(71, 71, 71);
+        background-color: rgb(255, 255, 255);
         font-family: 'Press Start 2P', cursive;
         font-size: 10px;
         display: inline-block;
         position: relative;
-        top: -650px;
-        left: 110px;
+        top: -1200px;
+        left: 940px;
     }
 
     div#bubble{
@@ -315,9 +348,10 @@
         width: 280px;
         height: 180px;
         position: relative;   
-        top: -930px;
-        left: 140px;
+        top: -1310px;
+        left: 1020px;
     }
+
     div#tingle{
         background: url('images/85130ag.gif');
         background-position: center;
@@ -326,9 +360,55 @@
         width: 40px;
         height: 40px;
         position: relative;
-        top: -980px;
-        left: 120px;
+        top: -1360px;
+        left: 1000px;
     }
+
+    div#log{
+        background: url('images/items-objects-2.png');
+        background-position: -560px -129px;
+        background-size: 3400%;
+        width: 40px;
+        height: 56px;
+        border-radius: 8px;
+        position: relative;
+        top: -1409px;
+        left: 960px;
+    }
+
+    #titlescreen{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+        background-color: rgb(0, 0, 0);
+        font-family: 'Press Start 2P', cursive;
+        font-size: 10px;
+        color:white;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        text-align: center;
+        padding-top: 20%;
+    }
+
+    #titlescreen button{
+        font-family: 'Press Start 2P', cursive;
+        margin-top: 30px;
+        padding:10px;
+        border-radius: 5px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+    } 
+
+    div.blocker{
+        background: url('images/items-objects-3.gif');
+        background-position: -227px 220px;
+        background-size: 2100%;
+        width: 20px;
+        height: 20px;
+    }
+ 
     </style>
 </head>
 
@@ -358,51 +438,61 @@
         <div id='bowWow'></div>
         <div id='potion'></div>
         <div id='score'></div>
+        <div id='x'>X</div>
         <div id='lives'></div>
         <div id='title'>Press SPACE to Start</div>
         <div id='bubble'></div>  
         <div id='tingle'></div>
         <div id='gameover'>Game Over</div>      
+        <div id='heart'></div>
+        <div id='chest'></div>
+        <div id='log'></div>
+        <div id='blocker'></div>
+        <div id='titlescreen'>
+            <h1>Some Clever Cucco Pun</h1>
+            <button onclick="startgame();">Start</button>
+        </div>
+
     </div>
 
 <!-- /* JS-------------------------------------------------------------------------------------------------------------------------- */ -->
 
 <script src="pathfinding.js"></script>
     <script>
-        var world= [
-            [7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0],
-            [7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0],
-            [7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0],
-            [7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0],
-            [7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,7,7,7,7,7,7,7,0,0],
-            [7,7,7,7,7,7,7,8,6,6,6,6,6,6,1,1,1,0,6,6,0,8,8,8,8,0,6,6,0,0,0,0,5,1,1,1,0,0,8,7,7,7,7,7,7,7,7,7],
-            [7,7,7,7,7,8,8,8,6,6,6,6,6,6,6,1,1,0,0,0,9,8,8,8,8,9,0,0,1,0,0,0,1,0,1,0,0,0,8,8,8,7,7,7,7,7,7,7],
-            [7,7,7,7,7,8,0,6,6,6,6,6,6,6,1,1,0,0,0,0,9,8,8,8,8,9,0,1,1,0,0,0,0,0,0,0,0,0,0,0,8,7,7,7,7,7,7,7],
-            [7,7,7,7,7,8,6,6,6,6,6,6,0,0,1,1,0,0,0,0,9,8,8,8,8,9,0,1,0,0,0,0,2,2,2,2,2,2,1,1,8,7,7,7,7,7,7,7],
-            [7,7,7,7,7,8,1,6,3,0,0,6,0,0,0,1,1,0,0,0,4,4,0,0,4,4,0,0,0,0,0,0,2,0,8,8,0,2,0,0,8,7,7,7,7,7,7,7],
-            [7,7,7,7,7,8,1,6,6,6,0,5,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,8,8,0,2,0,0,8,7,7,7,7,7,7,7],
-            [7,7,7,7,7,8,0,6,0,6,0,6,0,0,0,1,1,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,0,8,8,0,2,0,0,8,7,7,7,7,7,7,7],
-            [7,7,7,7,7,8,0,0,0,1,0,6,6,0,0,1,1,0,0,0,0,0,0,2,0,0,0,0,0,0,0,6,2,0,0,0,8,2,0,0,8,7,7,7,7,7,7,7],
-            [7,7,7,7,7,8,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,2,0,0,0,0,0,0,0,6,2,2,2,2,2,2,0,0,8,7,7,7,7,7,7,7],
-            [7,7,7,7,7,8,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,2,0,0,0,0,0,0,0,6,6,6,0,2,0,0,0,0,8,7,7,7,7,7,7,7],
-            [7,7,7,7,7,8,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,8,7,7,7,7,7,7,7],
-            [7,7,7,7,7,8,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,1,1,0,0,0,0,0,0,2,0,0,0,0,8,7,7,7,7,7,7,7],
-            [7,7,7,7,7,8,4,4,4,4,4,4,4,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,8,8,8,8,8,8,8],
-            [7,7,7,7,7,8,6,8,8,8,8,8,1,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,8],
-            [7,7,7,7,7,8,6,8,8,8,8,8,1,0,0,0,1,0,0,2,8,8,8,0,0,0,0,0,1,1,0,0,0,0,1,0,2,2,2,0,0,0,0,0,0,0,0,8],
-            [7,7,7,7,7,8,6,8,8,8,8,8,9,1,0,0,1,0,0,2,8,8,8,5,0,0,0,0,1,1,1,1,0,0,1,0,2,0,0,0,8,8,8,8,8,8,8,8],
-            [7,7,7,7,7,8,6,8,8,8,8,8,9,1,1,0,1,0,0,2,8,8,8,0,0,1,1,1,1,1,1,1,0,0,0,0,2,0,0,0,8,7,7,7,7,7,7,7],
-            [7,7,7,7,7,8,6,8,8,8,8,8,9,1,1,1,1,0,0,2,8,0,0,0,0,0,1,1,0,0,1,1,1,0,0,0,2,0,0,6,8,7,7,7,7,7,7,7],
-            [7,7,7,7,7,8,0,0,0,0,1,1,1,1,1,1,0,0,0,2,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,2,0,0,6,8,7,7,7,7,7,7,7],
-            [7,7,7,7,7,8,0,0,0,2,1,1,0,0,1,1,0,0,6,2,0,0,0,0,0,0,1,0,0,1,8,8,8,8,0,0,2,8,8,8,8,7,7,7,7,7,7,7],
-            [7,7,7,7,7,8,0,0,0,2,1,1,0,0,1,1,6,6,6,2,0,0,0,1,1,0,0,0,1,1,8,8,8,8,0,0,2,8,8,8,8,7,7,7,7,7,7,7],
-            [7,7,7,7,7,8,1,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,1,0,0,0,1,9,8,8,8,8,0,1,2,8,8,8,8,7,7,7,7,7,7,7],
-            [7,7,7,7,7,8,1,1,0,1,1,1,0,0,1,1,0,0,0,0,0,0,2,0,0,0,0,0,0,9,8,8,8,8,1,1,2,0,0,0,8,7,7,7,7,7,7,7],
-            [7,7,7,7,7,8,0,0,0,1,1,0,0,0,1,1,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,8,7,7,7,7,7,7,7],
-            [7,7,7,7,7,8,8,8,0,1,1,0,0,0,5,1,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,7,7,7,7,7,7,7],
-            [7,7,7,7,7,7,7,8,0,1,1,1,1,1,1,1,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,7,7,7,7,7,7,0],
-            [7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,0,0,0,2,0,0,0,0,8,8,8,8,8,8,8,8,8,8,8,8,8,8,0,7,7,7,0,0,0],
-            [7,7,7,7,6,6,6,6,0,0,6,6,6,6,6,6,6,0,8,8,8,8,8,8,8,8,8,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        var world= [        
+            [7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,7,7,8,6,6,6,6,6,6,1,1,1,0,6,6,0,8,8,8,8,0,6,6,0,0,0,0,5,1,1,1,0,0,8,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0,0,0,0,0,0,0,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,8,8,6,6,6,6,6,6,6,1,1,0,0,0,9,8,8,8,8,9,0,0,1,0,0,0,1,0,1,0,0,0,8,8,8,7,7,7,7,7,7,7,7,7,7,0,0,0,5,0,0,0,1,1,0,0,0,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,0,6,6,6,6,6,6,6,1,1,0,0,0,0,9,8,8,8,8,9,0,1,1,0,0,0,0,0,0,0,0,0,0,0,8,7,7,7,7,7,7,7,7,7,0,0,0,0,0,0,1,1,1,0,0,0,6,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,6,6,6,6,6,6,0,0,1,1,0,0,0,0,9,8,8,8,8,9,0,1,0,0,0,0,2,2,2,2,2,2,1,1,8,7,7,7,7,7,7,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,1,6,3,0,0,6,0,0,0,1,1,0,0,0,4,4,0,0,4,4,0,0,0,0,0,1,2,0,8,8,0,2,1,1,8,7,7,7,7,7,7,7,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,6,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,1,6,6,6,0,5,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,2,0,8,8,0,2,1,1,8,7,7,7,7,7,7,1,1,0,0,0,0,0,1,1,1,0,0,0,6,6,6,6,6,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,0,6,0,6,0,6,0,0,0,1,1,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,0,8,8,0,2,1,0,8,7,7,7,7,7,7,6,0,0,2,1,0,0,1,1,1,0,0,0,0,6,6,6,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,0,0,0,1,0,6,6,0,0,1,1,0,0,0,0,0,0,2,0,0,0,0,0,0,0,6,2,0,0,0,8,2,0,0,8,7,7,7,7,7,7,6,0,1,2,2,2,0,0,1,0,0,0,0,0,6,6,6,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,2,0,0,0,0,0,0,0,6,2,2,2,2,2,2,0,0,8,7,7,7,7,7,7,6,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,1,2,0,0,0,0,0,0,0,6,6,6,0,2,0,0,0,0,8,7,7,7,7,7,7,1,1,0,0,0,0,0,1,1,1,1,0,1,1,1,1,1,0,0,0,1,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,8,7,7,7,7,7,7,7,1,0,0,1,0,0,1,2,2,2,1,1,2,2,2,1,0,0,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,1,1,0,0,0,0,0,0,2,0,0,0,0,8,7,7,7,7,7,7,7,0,0,0,0,0,0,1,2,1,2,2,2,2,1,2,1,0,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,4,4,4,4,4,4,4,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,8,8,8,8,8,8,8,0,0,0,1,1,1,1,2,2,2,2,2,2,2,2,1,0,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,6,8,8,8,8,8,1,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,10,2,2,2,2,2,2,2,2,2,8,8,2,2,2,1,0,0,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,6,8,8,8,8,8,1,0,0,0,1,0,0,2,8,8,8,0,0,0,0,0,1,1,0,0,0,0,1,0,2,2,2,0,0,0,0,0,0,0,0,0,10,2,2,2,2,2,2,2,2,2,8,8,2,2,2,1,0,0,1,1,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,6,8,8,8,8,8,9,1,0,0,1,0,0,2,8,8,8,5,0,0,0,0,1,1,1,1,0,0,1,0,2,0,0,0,8,8,8,8,8,8,8,8,0,0,0,1,1,1,1,2,2,2,2,2,2,2,2,1,0,0,6,1,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,6,8,8,8,8,8,9,1,1,0,1,0,0,2,8,8,8,0,0,1,1,1,1,1,1,1,0,0,0,0,2,0,0,0,8,7,7,7,7,7,7,7,6,0,0,0,0,0,1,2,1,2,2,2,2,1,2,1,0,0,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,6,8,8,8,8,8,9,1,1,1,1,0,0,2,8,0,0,0,0,0,1,1,0,0,1,1,1,0,0,0,2,0,0,6,8,7,7,7,7,7,7,7,6,0,0,0,0,0,1,2,2,2,1,1,2,2,2,1,0,0,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,0,0,0,0,1,1,1,1,1,1,0,0,0,2,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,2,0,0,6,8,7,7,7,7,7,7,7,6,0,0,0,0,0,1,1,1,1,0,1,1,1,1,1,0,0,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,0,0,0,2,1,1,0,0,1,1,0,0,6,2,0,0,0,0,0,0,1,0,0,1,8,8,8,8,0,0,2,8,8,8,8,7,7,7,7,7,7,7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,0,0,0,2,1,1,0,0,1,1,6,6,6,2,0,0,0,1,1,0,0,0,1,1,8,8,8,1,0,0,2,8,8,8,8,7,7,7,7,7,7,7,7,7,0,0,0,5,1,0,0,0,0,0,0,0,0,0,1,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,1,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,1,0,0,0,1,9,8,8,8,8,0,1,2,8,8,8,8,7,7,7,7,7,7,7,7,7,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,1,1,0,1,1,1,0,0,1,1,0,0,0,0,0,0,2,0,0,0,0,0,0,9,8,8,8,8,1,1,2,0,0,0,8,7,7,7,7,7,7,7,7,7,7,7,0,1,0,0,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,0,0,0,1,1,0,0,0,1,1,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,8,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,8,8,8,0,1,1,0,0,0,5,1,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,7,7,8,0,1,1,1,1,1,1,1,0,0,0,0,0,0,2,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,8,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,0,0,0,2,0,0,0,0,8,8,8,8,8,8,8,8,8,8,8,8,8,8,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,0,6,6,6,0,0,0,0,0,6,6,6,6,0,8,8,8,8,8,8,8,8,8,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+            [7,7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]
             
         ];
         var score=0;
@@ -419,6 +509,26 @@
             y:22
         };
 
+        var winflag=0;
+
+        var environment=0;
+
+
+        setInterval(function rotate(){
+    if (environment ==0){
+        document.getElementById('treep').style.transform ="skewY(3deg)";
+        document.getElementById('tree').style.transform ="skewY(3deg)";
+        document.getElementById('tree2').style.transform ="skewY(3deg)";
+        environment = 1;
+    } else {
+        document.getElementById('treep').style.transform ="skewY(-3deg)";
+        document.getElementById('tree').style.transform ="skewY(-3deg)";
+        document.getElementById('tree2').style.transform ="skewY(-3deg)";
+        environment = 0;
+    }
+},1500);
+
+
 
 //         var i =0
 //         var title = "Press SPACE to Start";
@@ -432,7 +542,6 @@
 //     displaytitle();
 //   }
 // }
-        
         function displayWorld(){
             var output= '';
             for(var i=0; i<world.length; i++){
@@ -442,7 +551,7 @@
                     output +="<div class='brick'></div>";
                     else if(world[i][j] == 1)
                     output +="<div class='coin'></div>";
-                    if(world[i][j] == 0)
+                    else if(world[i][j] == 0)
                     output +="<div class='empty'></div>";
                     else if(world[i][j] == 2)
                     output +="<div class='pave'></div>";
@@ -457,8 +566,9 @@
                     else if(world[i][j] == 4)
                     output +="<div class='fence'></div>";
                     else if(world[i][j] == 9)
-                    output +="<div class='pot'></div>";
-                    
+                    output +="<div class='pot'></div>";  
+                    else if(world[i][j] == 10)
+                    output +="<div class='blocker'></div>";  
                 }
                 output += "\n</div>";
             }
@@ -479,6 +589,7 @@
             document.getElementById('potion').style.top = potion.y*20+"px";
             document.getElementById('potion').style.left = potion.x*20+"px";
         }
+
         function displayScore(){
             document.getElementById('score').innerHTML =score;
         }
@@ -492,7 +603,6 @@
             document.getElementById('stump').style.left = stump.x*20+"px";
         }
 
-
         function displayfence(){
             document.getElementById('fence').style.top = fence.y*20+"px";
             document.getElementById('fence').style.left = fence.x*20+"px";
@@ -503,11 +613,11 @@
             document.getElementById('pot').style.left = pot.x*20+"px";
         }
 
-
         function displaybush(){
             document.getElementById('bush').style.top = bush.y*20+"px";
             document.getElementById('bush').style.left = bush.x*20+"px";
         }
+
         function displaypave(){
             document.getElementById('pave').style.top = pave.y*20+"px";
             document.getElementById('pave').style.left = pave.x*20+"px";
@@ -523,13 +633,41 @@
             document.getElementById('potion').style.left = potion.x*20+"px";
         }
 
+        function displayblocker(){
+            document.getElementById('blocker').style.top = blocker.y*20+"px";
+            document.getElementById('blocker').style.left = blocker.x*20+"px";
+        }
+
         function displaywater(){
             document.getElementById('water').style.top = water.y*20+"px";
             document.getElementById('water').style.left = water.x*20+"px";
         }
 
+        function displayGameOver(){
+            document.getElementById('gameover').style.visibility='visible';
+        }
 
-   
+        function hideGameover(){
+            document.getElementById('gameover').style.visibility='hidden';
+        }
+
+        function died(){
+            document.getElementById('kirby').style.visibility='hidden';
+            document.getElementById('lives').style.visibility='hidden';
+            document.getElementById('x').style.visibility='hidden';
+            document.getElementById('score').style.visibility='hidden';
+            document.getElementById('heart').style.visibility='hidden';
+            document.getElementById('bowWow').style.visibility='hidden';
+        }
+
+        function startgame(){
+            document.getElementById('titlescreen').style.visibility='hidden';
+        }        
+
+        // function stopbgm(){
+        //     Audio("sounds/Link.mp3").pause();
+        // }
+
     /* START-------------------------------------------------------------------------------------------------------------------------- */ 
 
         displayWorld();
@@ -545,7 +683,8 @@
         displaywater();
         displayfence();
         displaypot();
-     
+        hideGameover();
+        displayblocker();
 
         document.onkeydown = function(e){
             if(e.keyCode == 37 && world[kirby.y][kirby.x-1] <=3){
@@ -572,53 +711,90 @@
             else if(e.keyCode == 40 && world[kirby.y+1][kirby.x] >=3){
                 new Audio("sounds/OOT_Cucco1.wav").play();
             }
+
+            // var bgm=new Audio("sounds/Link.mp3");
+            // if(e.keyCode==32){
+            //     bgm.play();
+            //     var i = setInterval(function(){
+            // var chase=getCoordsTowardsTarget(kirby.x,kirby.y,bowWow.x,bowWow.y);
+            // bowWow.x=chase.x;
+            // bowWow.y=chase.y;
+            // displaybowWow();
+            // },500); }
+
+
+            var bgm=new Audio("sounds/Link.mp3");
             if(e.keyCode==32){
-                new Audio("sounds/Link.mp3").play();
+                bgm.play();
                 var i = setInterval(function(){
-            var chase=getCoordsTowardsTarget(kirby.x,kirby.y,bowWow.x,bowWow.y);
-            bowWow.x=chase.x;
-            bowWow.y=chase.y;
-            displaybowWow();
-        },500);
-                // displaybgm();
+                    if(winflag == 0){
+                    var chase=getCoordsTowardsTarget(kirby.x,kirby.y,bowWow.x,bowWow.y);
+                    bowWow.x=chase.x;
+                    bowWow.y=chase.y;
+                    displaybowWow();
+                    }},500); 
             }
+
             if(world[kirby.y][kirby.x]==1){
                 world[kirby.y][kirby.x]=0;
                 score+=10;
                 displayWorld();
                 displayScore();
             }
+            
             if(world[kirby.y][kirby.x]==3){
                 world[kirby.y][kirby.x]=0;
                 lives+=1;
                 displayWorld(); 
                 displayLives();
                 new Audio("sounds/TP_Heart.wav").play();
-            }            
-            // if(world[kirby.y][kirby.x]==world[bowWow.y][bowWow.x]){
-            //     lives-=1;
-            //     displayLives();
-            //     new Audio("sounds/LA_Link_Hurt.wav").play();
-            // }
+            }
 
+            var hurt=new Audio("sounds/LA_Link_Hurt.wav");
+            if(kirby.y==bowWow.y&&kirby.x==bowWow.x){
+                lives-=1;
+                displayWorld();
+                displayLives();
+                displayKirby();
+                displaybowWow();
+                hurt.play();
+                if(lives<0){
+                    hurt.pause();
+                }
+            }
 
-            console.log(e.keyCode);
+            if(lives==0){
+                displayGameOver();
+                died();
+            }
+
+            if(score==10){
+                document.getElementById('log').style.visibility='hidden';
+                var secret =new Audio("sounds/LA_Secret1.wav");
+                secret.play();
+                winflag = 1;
+                // bgm.pause();
+                score= score+10;
+                world[17][48] = 0;
+                world[18][48] = 0;
+                // document.getElementById('bowWow').style.display = "none";
+
+                displayWorld();
+                // score shown to increase when touch new flower but hidden until then
+            }
             displayKirby();
         }
-        
-        
 
-
-
-
-            // if(score==1280){
-
-            // }
-
-
-        // if(lives<0){
-        //     displayGameover();
-        // }
+       if(document.getElementById('start').click()){
+            startgame();
+        }
+ 
+//         var playerLives = ['image/heart.png', 'image/heart.png', 'image/heart.png'];
+// var hearts = playerLives.join(' ');
+// function playerLife() {
+//     for (var i = 1; i <= 3; i++) {
+//         var lifeEl = document.getElementById('heart');
+//         lifeEl.innerHTML = 'Lives: ' + hearts;}
 
         </script>
 
